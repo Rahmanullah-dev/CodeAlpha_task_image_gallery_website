@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPerfect | Image Gallery with Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">📷</span>
+                <span class="logo-text">PIXEL<span class="highlight">PERFECT</span></span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#explore" class="nav-link">Explore</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Home Section with SLIDER BACKGROUND -->
+    <section id="home" class="home-section">
+        <!-- Slider Background Images -->
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('https://picsum.photos/id/104/1920/1080')"></div>
+            <div class="slide" style="background-image: url('https://picsum.photos/id/15/1920/1080')"></div>
+            <div class="slide" style="background-image: url('https://picsum.photos/id/29/1920/1080')"></div>
+            <div class="slide" style="background-image: url('https://picsum.photos/id/96/1920/1080')"></div>
+            <div class="slide" style="background-image: url('https://picsum.photos/id/169/1920/1080')"></div>
+        </div>
+        
+        <!-- Dark Overlay for text readability -->
+        <div class="slider-overlay"></div>
+        
+        <div class="hero">
+            <h1>Capture <span class="gradient">Life's</span> Beautiful Moments</h1>
+            <p>Explore stunning photography from talented artists worldwide</p>
+            <button class="btn-primary" id="exploreBtn">Explore Gallery →</button>
+        </div>
+        
+        <!-- Slider Navigation Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+        </div>
+    </section>
+
+    <!-- Explore Section (Gallery) -->
+    <section id="explore" class="explore-section">
+        <div class="container">
+            <h2>📸 Explore Gallery</h2>
+            <p>Click any image to view fullscreen | 12 stunning photos</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">🌿 Nature</button>
+                <button class="filter-btn" data-filter="urban">🏙️ Urban</button>
+                <button class="filter-btn" data-filter="portrait">👤 Portrait</button>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="collections-section">
+        <div class="container">
+            <h2>📁 Our Collections</h2>
+            <p>Curated galleries for every mood</p>
+            
+            <div class="collections-grid">
+                <div class="collection-card" data-filter="nature">
+                    <div class="collection-icon">🌿</div>
+                    <h3>Nature's Beauty</h3>
+                    <p>Landscapes & Wildlife</p>
+                    <button class="view-btn">View Collection →</button>
+                </div>
+                <div class="collection-card" data-filter="urban">
+                    <div class="collection-icon">🏙️</div>
+                    <h3>Urban Life</h3>
+                    <p>City & Architecture</p>
+                    <button class="view-btn">View Collection →</button>
+                </div>
+                <div class="collection-card" data-filter="portrait">
+                    <div class="collection-icon">👤</div>
+                    <h3>Portraits</h3>
+                    <p>People & Emotions</p>
+                    <button class="view-btn">View Collection →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>📞 Contact Us</h2>
+            <p>We'd love to hear from you</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>📧 amankhan039616@gmail.com</p>
+                    <p>📱 +92 3061620033</p>
+                    <p>📍 peshawar, Pakistan</p>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <button class="lightbox-prev">❮</button>
+        <button class="lightbox-next">❯</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 PixelPerfect Gallery | 12+ Premium Photos | Image Slider Background</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
