@@ -1,7 +1,7 @@
 # CodeAlpha_task_image_gallery_website
 # 📷 PixelPerfect Gallery
 
-![PixelPerfect Gallery Preview](https://via.placeholder.com/1200x600/1e293b/ffffff?text=PixelPerfect+Gallery)
+![PixelPerfect Gallery Preview]((https://placehold.co/1200x600/1e293b/ffffff?text=PixelPerfect+Gallery)
 
 A stunning, fully responsive image gallery website featuring an automatic background slider, categorized photo collections, and an interactive lightbox viewer. Built with vanilla HTML, CSS, and JavaScript.
 
