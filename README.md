@@ -7,7 +7,7 @@ A stunning, fully responsive image gallery website featuring an automatic backgr
 
 ## ✨ Live Demo
 
-[View Live Demo](#) *(Add your deployment link here)*
+[View Live Demo](#) *(https://rahmanullah-dev.github.io/CodeAlpha_task_image_gallery_website/)*
 
 ## 📋 Features
 
